@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <link rel="stylesheet" type="text/css" href="css/cms.css">
+    <title> Staff Master List | University of Dowell</title>
+</head>
+<body background="img/cmsbackground.png">
+    <div class="container">
+        <form onsubmit="return false" id="masterstafflist">
+            <h2>Modify Staff Master List</h2>
+
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <a href="#" class="btn btn-info">Add Staff Member</a>
+                </div>
+            </div>
+
+             <div class="form-group row">
+                 <div class="col-xs-3">
+                     <label for="fname">First Name</label>
+                     <input type="text" class="form-control" id="fname">
+                 </div>
+             </div>
+             <div class="form-group row">
+                 <div class="col-xs-3">
+                     <label for="lname">Last Name</label>
+                     <input type="text" class="form-control" id="lname">
+                 </div>
+             </div>
+             <div class="form-group row">
+                 <div class="col-xs-3">
+                     <a href="#detail" id="search" class="btn btn-info" data-toggle="collapse">Search</a>
+                 </div>
+             </div>
+
+             <div id="detail" class="collapse">
+                 <div class="col-xs-3">
+                    <table id="table11" class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Staff ID</th>
+                                <th>Semester</th>
+                                <th>Campus</th>
+                                <th>Preferred Days</th>
+                                <th>Consultation Hours</th> 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Miss X</td>
+                                <td>999999</td>
+                                <td>Spring</td>
+                                <td>Neverland</td>
+                                <td>Mon, Tues, Wed</td>
+                                <td>Thurs 3pm-5pm</td>
+                                <td><button>Edit</button></td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                 </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script type="text/javascript" src="js/unitEnrollment.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/cms.css">
+    <title> Unit Enrollment | University of Dowell</title>
+</head>
+<body background="img/cmsbackground.png">
+    <div class="container">
+        <form onsubmit="return false" id="erollForm">
+            <h2>Student Unit Enrollment Form</h2>
+            <div class="form-group row">
+                <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Unit number will be searched in the database for now enter KIT501" aria-label="Search" id="unitid">
+                <i class=fas fa-search"></i>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="studentId">Student ID</label>
+                    <input type="text" class="form-control" id="studentId">
+                </div>
+            </div>
+            <div class="col-xs-3">
+                Details will be retrived from the database. This is a temporary placeholder.
+                <table id="table2" class="table">
+                    <thead>
+                        <tr>
+                            <th>Unit Id</th>
+                            <th>Semester</th>
+                            <th>Campus</th>
+                            <th>Enrol</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                             <td>KIT501 ICT Systems Administration Fundamentals</td>
+                             <td>Semester 1</td>
+                             <td>Pandora</td>
+                             <td><button type="submit" id="enrol">Enrol</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                 <p id="display"></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script type="text/javascript" src="js/staffRegistration.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/cms.css">
+    <title>Staff CMS Registration | University of Dowell</title>
+</head>
+<body background="img/cmsbackground.png">
+    <div class="container">
+        <form onsubmit="return false" id="staffRegisForm"> 
+            <h2>Staff CMS Registration Form</h2>
+            <div class="row float-right">
+                <a href="registration.html" class="btn btn-info">Back</a>
+             </div>
+             <br>
+             <br>
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="staffId">Staff ID:</label>
+                    <input type="text" class="form-control" id="staffId">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3"> 
+                    <label for="fname">First Name:</label>
+                    <input type="text" class="form-control" id="fname">
+                </div>
+             </div>
+             <div class="form-group row">
+                 <div class="col-xs-3">
+                     <label for="lname">Last Name:</label>
+                     <input type="text" class="form-control" id="lname">
+                 </div>
+             </div>
+             <div class="form-group row">
+                 <div class="col-xs-3">
+                     <label for="passwd">Password:</label>
+                     <input type="password" class="form-control" id="passwd">
+                 </div>
+             </div>
+             <div class="form-group row">
+                 <div class="col-xs-3">
+                     <label for="confirmpasswd">Confirm password:</label>
+                     <input type="password" class="form-control" id="confirmpasswd">
+                 </div>
+             </div>
+             <div class="form-group row">
+                 <div class="col-xs-3">
+                     <label for="email">Email Address:</label>
+                     <input type="email" class="form-control" id="email">
+                 </div>
+             </div>
+             <div class="form-group row">
+                 <div class="col-xs-3">
+                     <label for="phonenumber">Phone Number:</label>
+                     <input type="text" class="form-control" id="phonenumber">
+                 </div>
+             </div>
+              <div class="form-group row">
+                 <div class="col-xs-3">
+                     <label for="degree">Highest Degree:</label>
+                     <select class="form-control" id="degree">
+                         <option>Highest Degree</option>
+                         <option>Master of Information Technology and Systems</option>
+                         <option>Doctor of Philosophy(PhD)</option>
+                         <option>Bacheolor of Information and Communication Technology</option>
+                     </select>
+                 </div>
+             </div>             
+              <div class="form-group row">
+                 <div class="col-xs-3">
+                     <label for="specialization">Specialization:</label>
+                     <select class="form-control" id="specialization"> 
+                         <option>Specialization</option>
+                         <option>Network Administrator</option>
+                         <option>Human Computer Interaction</option>
+                         <option>Information Systems</option>
+                         <option>Image Processing</option>
+                         <option>Computer Security</option>
+                     </select>
+                 </div>
+             </div>
+             <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

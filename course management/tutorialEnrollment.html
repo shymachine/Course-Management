@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script type="text/javascript" src="js/tutorialEnrollment.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/cms.css">
+    <title> Tutorial Enrollment | University of Dowell</title>
+</head>
+<body background="img/cmsbackground.png">
+    <div class="container">
+        <form onsubmit="return false" id="erollForm">
+            <h2>Student Tutorial Enrollment Form</h2>
+            <div class="form-group row">
+                <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Unit number will be searched in the database for now enter KIT501" aria-label="Search" id="unitid">
+                <i class=fas fa-search"></i>
+            </div>
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="studentId">Student ID</label>
+                    <input type="text" class="form-control" id="studentId">
+                </div>
+            </div>
+            <div class="form-group row">
+                <button id="btn">Search</button>
+            </div>
+            <div class="form-group row">
+               Details will be retrived from the database. This is a temporary placeholder.
+            </div>
+            <div class="form-group row">
+                <div class="col-sm">
+                </div>
+                <div class="col-sm">
+                    9am-11am
+                </div>
+                <div class="col-sm">
+                    11am-1pm
+                </div>
+                <div class="col-sm">
+                    1pm-3pm
+                </div>
+                <div class="col-sm">
+                    3pm-5pm
+                </div>
+            </div>
+            <div class="form-group row" id="timetablerow">
+                <div class="col-sm" id="timetablecol">
+                    Monday
+                </div>
+                <div class="col-sm" id="timetablecol">
+                    KIT 501
+                    <p>Location=Pandora</p>
+                    <p id="available">Available=(10/20)</p>
+                    <button>Enrol</button>
+                </div>
+                <div class="col-sm" id="timetablecol">
+                </div>
+                <div class="col-sm" id="timetablecol">
+                </div>
+                <div class="col-sm" id="timetablecol">
+                </div>
+            </div>
+            <div class="form-group row" id="timetablerow">
+                <div class="col-sm" id="timetablecol">
+                    Tuesday
+                </div>
+                <div class="col-sm" id="timetablecol">
+                </div>
+                <div class="col-sm" id="timetablecol">
+                    KIT 501
+                    <p>Location=Neverland</p>
+                    <p id="available">Available=(20/20)</p>
+                    <button>Enrol</button>
+                </div>
+                <div class="col-sm" id="timetablecol">
+                </div>
+                <div class="col-sm" id="timetablecol">
+                </div>
+            </div>
+            <div class="form-group row" id="timetablerow">
+                <div class="col-sm" id="timetablecol">
+                    Wednesday
+                </div>
+                <div class="col-sm" id="timetablecol">
+                </div>
+                <div class="col-sm" id="timetablecol">
+                </div>
+                <div class="col-sm" id="timetablecol">
+                </div>
+                <div class="col-sm" id="timetablecol">
+                </div>
+            </div>
+            <div class="form-group row" id="timetablerow">
+                <div class="col-sm" id="timetablecol">
+                    Thursday
+                </div>
+                <div class="col-sm" id="timetablecol">
+                </div>
+                <div class="col-sm" id="timetablecol">
+                </div>
+                <div class="col-sm" id="timetablecol">
+                </div>
+                <div class="col-sm" id="timetablecol">
+                </div>
+            </div>
+            <div class="form-group row" id="timetablerow">
+                <div class="col-sm" id="timetablecol">
+                    Friday
+                </div>
+                <div class="col-sm" id="timetablecol">
+                </div>
+                <div class="col-sm" id="timetablecol">
+                </div>
+                <div class="col-sm" id="timetablecol">
+                </div>
+                <div class="col-sm" id="timetablecol">
+                </div>
+            </div>
+
+            <div>
+                 <p id="display"></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+

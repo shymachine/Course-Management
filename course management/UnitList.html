@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script> 
+    <script type="text/javascript" src="js/UnitList.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/cms.css">
+    <title> Unit List | University of Dowell</title>
+</head>
+<body background="img/cmsbackground.png">
+    <div class="container">
+        <form onsubmit="return false" id="masterstafflist">
+            <h2>Unit List</h2>
+              <p>This page is accesible only to the degree co-ordinator (DC)</p>
+              <div class="form-group row">
+                 <div class="col-xs-3">
+                     <select class="form-control" id="courselist">
+                         <option value="Info">Select Course</option>
+                         <option value="KIT">Master of Information Technology and Systems</option>
+                         <option value="BMA">Master of Business Administration</option>
+                     </select>
+                 </div>
+             </div>
+
+             <div class="form-group row">
+                 <div class="col-xs-3">
+                     <select class="form-control" id="course">
+                         <option value=Info_>Select Unit</option>
+                         <option value="KIT_501"> KIT501 ICT Systems Administration Fundamentals</option>
+                         <option value="KIT_502"> KIT 502 Web Development</option>
+                         <option value="KIT_503"> KIT 503 ICT Profressional Practices and Management</option>
+                         <option value="BMA_534"> BMA 534 International Business Management</option>
+                     </select>
+                 </div>
+             </div>
+
+             <div class="form-group row">
+                 <div class="col-xs-3">
+                     <a href="#detail" id="search" class="btn btn-info" data-toggle="collapse">Search</a>
+                 </div>
+             </div>
+
+             <div id="detail" class="collapse">
+                 <div class="col-xs-3">
+                    <table id="table11" class="table">
+                        <thead>
+                            <tr>
+                                <th>Unit ID</th>
+                                <th>Description</th>
+                                <th>Semester</th>
+                                <th>Campus</th> 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>KIT 502</td>
+                                <td>Web Development</td>
+                                <td>Semester 1</td>
+                                <td>Pandora</td>
+                                <td><button>Modify</button></td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                 </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"crossorigin="anonymous"></script>
+
+</body>
+</html>
